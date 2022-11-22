@@ -25,6 +25,9 @@ jobs:
           filepath: 'veracode-scan-target.zip'
           vid: '${{ secrets.VERACODE_API_ID }}'
           vkey: '${{ secrets.VERACODE_API_KEY }}'
+          store_baseline_file: true
+          store_baseline_file_branch: test-baseline-file
+          create_baseline_from: standard
 #          createsandbox: 'true'
 #          sandboxname: 'SANDBOXNAME'
 #          scantimeout: 0
